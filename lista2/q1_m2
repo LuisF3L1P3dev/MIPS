@@ -1,0 +1,17 @@
+#1. Escreva um código em linguagem de montagem para realizar 
+#a expressão ? = b + c – (d – e) 
+#sem precisar utilizar mais de 5 registradores.
+.data
+
+.text
+	li $t0, 75 #b
+	li $t1, 25 #c
+	li $t2, 30 #d
+	li $t3, 20 #e
+	
+	sub $s0, $t2, $t3 # d - e
+	sub $s0, $t1, $s0 # c - (d - e)
+	add $s0, $s0, $t0, # b + c - (d - e)
+	
+	
+	

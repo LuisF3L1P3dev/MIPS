@@ -1,0 +1,9 @@
+#5. Crie uma sequência de instruções MIPS 
+#para implementar a instrução div do C/Java
+.text
+	li $t0, 20
+	li $t1, 2
+	
+	div $s0, $t0, $t1
+	
+	
