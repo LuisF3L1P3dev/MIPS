@@ -1,6 +1,6 @@
 .data
 	saudacao: .asciiz "Digite sua idade: "
-	saida: .asciiz "sua idade È "
+	saida: .asciiz "sua idade √© "
 .text
 	li $v0, 4#imprimir a string
 	la $a0, saudacao
@@ -9,13 +9,13 @@
 	li $v0, 5 #leitura de inteiro
 	syscall
 	
-	move $t0, $v0#valor fornecido est· em t0
+	move $t0, $v0#valor fornecido est√° em t0
 
 	li $v0, 4#imprimir a string
 	la $a0, saida
 	syscall
 	
-	li $v0, 1
+	li $v0, 1 #imprime inteiro
 	move $a0, $t0
 	syscall
 	
